@@ -1,13 +1,14 @@
+import java.util.Scanner;
 void main() {
 
-    IO.println(String.format("Hello and welcome!"));
-
+    IO.println("Hello and welcome!");
+    Scanner input = new Scanner (System.in);
     for (int i = 1; i <= 5; i++) {
         IO.println("i = " + i);
     }
 
     IO.println("Enter a number:");
-    int number = IO.readInt();
+    int number = input.nextInt();
 
 
     if (number % 2 == 0) {
